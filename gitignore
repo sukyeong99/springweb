@@ -1,0 +1,13 @@
+
+
+
+bin/
+build/
+dist/
+gradle/
+.*
+
+gradlew*
+settings.gradle
+gradle.properties
+src/main/webapp/META-INF/context.xml
