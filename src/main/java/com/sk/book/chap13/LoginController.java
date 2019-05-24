@@ -1,6 +1,7 @@
 package com.sk.book.chap13;
 
 
+
 import javax.servlet.http.HttpSession;
 
 import org.apache.logging.log4j.LogManager;
@@ -15,7 +16,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-
+/**
+ * p.356 [리스트 13.6] 로그인 컨트롤러 수정
+ * 
+ * @author Jacob
+ */
 @Controller
 public class LoginController {
 
