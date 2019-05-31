@@ -17,7 +17,7 @@
 	<%@ include file="/WEB-INF/jsp/header.jsp"%>
 	<h2>글 보기</h2>
 	<p>
-		<a href="./app/article/list">글목록</a>
+
 		
 		<c:if test="${letter.senderId == sessionScope.MEMBER.memberId }">
 			<a href="./app/letter/delete?letterId=${letter.letterId }"
