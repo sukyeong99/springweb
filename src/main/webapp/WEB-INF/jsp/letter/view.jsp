@@ -18,9 +18,9 @@
 	<h2>글 보기</h2>
 	<p>
 		<a href="./app/article/list">글목록</a>
-		<c:if test="${article.userId == sessionScope.MEMBER.memberId }">
-			<a href="./app/article/updateForm?articleId=${article.articleId }">글수정</a>
-			<a href="./app/article/delete?articleId=${article.articleId }"
+		
+		<c:if test="${letter.senderId == sessionScope.MEMBER.memberId }">
+			<a href="./app/letter/delete?letterId=${letter.letterId }"
 				onclick="return confirmDelete();">글삭제</a>
 		</c:if>
 	</p>
@@ -29,10 +29,10 @@
 		<span>${letter.letterId }</span> | <span style="font-weight: bold;">${letter.title }</span>
 	</p>
 	<p>
-		<span>${letter.cdate }</span> | <span>${letter.name }</span>
+		<span>${letter.cdate }</span> | <span>${letter.senderName }</span> | <span>${letter.receiverName }</span>
 	</p>
 	<hr />
-	<p>${article.contentHtml }</p>
+	<p>${letter.contentHtml }</p>
 	<hr />
 </body>
 </html>

@@ -25,6 +25,7 @@ public class MemberDao {
 
 	static final String CHANGE_PASSWORD = "UPDATE member SET password=sha2(?,256) WHERE (memberId, password)=(?, sha2(?,256))";
 
+
 	@Autowired
 	JdbcTemplate jdbcTemplate;
 
@@ -69,4 +70,5 @@ public class MemberDao {
 		return jdbcTemplate.update(CHANGE_PASSWORD, newPassword, memberId,
 				currentPassword);
 	}
+
 }

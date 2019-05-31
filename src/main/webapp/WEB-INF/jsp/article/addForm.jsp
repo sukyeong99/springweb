@@ -20,6 +20,7 @@
 		<p>
 			<textarea name="content" style="width: 100%; height: 200px;" required></textarea>
 		</p>
+
 		<p>
 			<button type="submit">등록</button>
 		</p>

@@ -5,7 +5,8 @@ public class Member {
 	String email; // 이메일
 	String password; // 비밀번호
 	String name; // 이름
-	String cdate; // 가입일
+	String cdate;
+	String write;// 가입일
 
 	/**
 	 * Default Constructor
@@ -65,7 +66,8 @@ public class Member {
 	public void setCdate(String cdate) {
 		this.cdate = cdate;
 	}
-
+	
+	
 	@Override
 	public String toString() {
 		return "Member [memberId=" + memberId + ", email=" + email + ", name="

@@ -1,6 +1,5 @@
 package com.sk.article;
 
-
 public class Article {
 
 	String articleId;
