@@ -18,10 +18,10 @@
 				<a href="./app/logout">[로그아웃]</a>
 			</p>
 			<p>
-		<a href="./app/letter/listOfReceiver">[받은 편지 목록]</a>
+		<a href="./app/letter/listOfReceiver">[받은 편지함]</a>
 	</p>
 				<p>
-		<a href="./app/letter/listOfSender">[보낸 편지 목록]</a>
+		<a href="./app/letter/listOfSender">[보낸 편지함]</a>
 	</p>
 		</c:when>
 		<c:otherwise>

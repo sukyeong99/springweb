@@ -19,9 +19,10 @@
 	<p>
 
 		
-		<c:if test="${letter.senderId == sessionScope.MEMBER.memberId }">
-			<a href="./app/letter/delete?letterId=${letter.letterId }"
+		<c:if test="${letter.senderId == sessionScope.MEMBER.memberId or letter.receiverId == sessionScope.MEMBER.memberId }">
+			<a href="./app/letter/delete?letterId=${letter.letterId }&mode=${param.mode}"
 				onclick="return confirmDelete();">글삭제</a>
+				
 		</c:if>
 	</p>
 	<hr />
