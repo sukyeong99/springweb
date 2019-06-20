@@ -11,7 +11,7 @@
 	<p>
 		<a href="./app/article/list">글 목록</a>
 	</p>
-	<form action="./app/article/add" method="post">
+	<form action="./app/article/s/add" method="post">
 		<p>제목 :</p>
 		<p>
 			<input type="text" name="title" maxlength="100" style="width: 100%;" required>
@@ -20,7 +20,6 @@
 		<p>
 			<textarea name="content" style="width: 100%; height: 200px;" required></textarea>
 		</p>
-
 		<p>
 			<button type="submit">등록</button>
 		</p>

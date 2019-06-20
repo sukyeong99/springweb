@@ -1,3 +1,4 @@
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!doctype html>
 <html>
@@ -22,7 +23,7 @@ th {
 </head>
 <body>
 	<%@ include file="/WEB-INF/jsp/header.jsp"%>
-
+	<h2>글 목록</h2>
 
 	<table>
 		<thead>
@@ -36,8 +37,8 @@ th {
 		<tbody>
 			<c:forEach var="letter" items="${letters}">
 				<tr>
-					<th><a href="./app/letter/view?letterId=${letter.letterId }">${letter.letterId }</a></th>
-					<th><a href="./app/letter/view?letterId=${letter.letterId }">${letter.title }</a></th>
+					<th><a href="./app/letter/view?letterId=${letter.letterId } ">${letter.letterId }</a></th>
+					<th><a href="./app/letter/view?letterId=${letter.letterId } ">${letter.title }</a></th>
 					<th>${letter.senderName }</th>
 					<th>${letter.cdate }</th>
 				</tr>

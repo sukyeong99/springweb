@@ -23,9 +23,14 @@
 			<a href="./app/letter/delete?letterId=${letter.letterId }&mode=${param.mode}"
 				onclick="return confirmDelete();">글삭제</a>
 				
+				
 		</c:if>
 	</p>
+	
 	<hr />
+	<p>
+	<a href="./app/letter/addForm?receiverId=${member.memberId }&receiverName=${member.name }">Die antwort</a>
+	</p>
 	<p>
 		<span>${letter.letterId }</span> | <span style="font-weight: bold;">${letter.title }</span>
 	</p>

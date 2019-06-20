@@ -88,8 +88,9 @@ public class LetterController {
 			throw new RuntimeException("No Authority!");
 
 		if ("SENT".equals(mode))
-			return "redirect:/app/letter/listOfReceiver";
+			
+		return "redirect:/app/letter/listOfSender";
 		else
-			return "redirect:/app/letter/listOfSender";
+			return "redirect:/app/letter/listOfReceiver";
 	}
 }
